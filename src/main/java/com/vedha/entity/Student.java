@@ -33,11 +33,20 @@ public class Student {
         this.studentName = studentName;
     }
 
+    public List<Subject> getSubjectList() {
+        return subjectList;
+    }
+
+    public void setSubjectList(List<Subject> subjectList) {
+        this.subjectList = subjectList;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "studentId=" + studentId +
                 ", studentName='" + studentName + '\'' +
+                ", subjectList=" + subjectList +
                 '}';
     }
 }
