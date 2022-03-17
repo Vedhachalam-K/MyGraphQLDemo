@@ -14,7 +14,7 @@ public class Student {
     @Column(name = "student_name")
     private String studentName;
 
-    @OneToMany(mappedBy = "student", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Subject> subjectList;
 
     public Integer getStudentId() {
