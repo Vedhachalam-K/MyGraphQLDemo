@@ -1,0 +1,27 @@
+type Query{
+    myFirstQuery : String
+    mySecondQuery : String
+    studentName ( st : StudentModel ) : String
+    student (id: Int) : Student
+}
+
+input StudentModel {
+    firstName : String
+    lastName: String
+}
+
+type Student {
+    studentId : Int
+    studentName : String
+    subjectList : [Subject]
+}
+
+type Subject {
+    subjectPk : SubjectPk
+    subjectName : String
+}
+
+type SubjectPk{
+    subjectId : Int
+    studentId : Int
+}
