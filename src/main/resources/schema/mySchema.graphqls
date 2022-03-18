@@ -30,5 +30,13 @@ type SubjectPk{
 type StudentResponse {
     studentId:Int
     studentName:String
-    subjectList:[String]
+    subjectList(subjectFilter: SubjectFilter):[String]
+}
+
+enum SubjectFilter {
+    All,
+    English,
+    Tamil,
+    Maths,
+    Physics
 }
