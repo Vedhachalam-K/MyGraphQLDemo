@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@ComponentScan({"com.vedha.query","com.vedha.service", "com.vedha.resolver"})
+@ComponentScan({"com.vedha.query","com.vedha.service", "com.vedha.resolver", "com.vedha.mutation"})
 @EntityScan({"com.vedha.entity"})
 @EnableJpaRepositories("com.vedha.repository")
 public class GraphqldemoApplication {

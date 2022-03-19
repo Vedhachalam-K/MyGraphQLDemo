@@ -1,0 +1,32 @@
+------------------------
+query {
+  studentResponse(id:2) {
+    studentId
+    studentName
+    subjectList(subjectFilter: Physics)
+  }
+}
+------------------------
+
+mutation {
+  createStudent(createStudentRequest: {
+    studentName:"Niranjan"
+    subjectList:[
+      "Maths",
+      "Physics"
+    ]
+  }) {
+    studentId
+    studentName
+    subjectList(subjectFilter: All)
+	}
+}
+
+------------------------
+
+
+
+
+
+
+
